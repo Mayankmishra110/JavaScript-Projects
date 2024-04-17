@@ -12,7 +12,14 @@ form.addEventListener("submit", function (e) {
   } else if (weight === "" || weight < 0 || isNaN(weight)) {
     results.innerHTML = `Please give a valid height ${weight}`;
   } else {
-    const bmi = (weight / ((height * height) / 10000)).toFixed(2);
+    const bmi = (weight / ((height * height) / 10000)).toFixed(3);
     results.innerHTML = `<span>${bmi}</span>`;
+    if (bmi < 18) {
+      results.innerHTML += `Khane peene pr dhyan de bhai/behen`;
+    } else if (bmi > 18 && bmi < 22) {
+      results.innerHTML += `Nice, you are fit`;
+    } else {
+      results.innerHTML += `Kam kha bhai/behen`;
+    }
   }
 });
