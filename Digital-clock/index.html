@@ -7,16 +7,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- <div class="body"></div> -->
+    <nav
+      style="
+        display: flex;
+        justify-content: center;
+        background-color: cyan;
+        width: auto;
+        height: 25px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: solid;
+      "
+    >
+      My digital clock project
+    </nav>
 
-    <h1 class="text">Click on the color to change background colors</h1>
-
-    <div class="buttons">
-      <button class="button" id="yellow"></button>
-      <button class="button" id="blue"></button>
-      <button class="button" id="grey"></button>
-      <button class="button" id="pink"></button>
+    <div class="center">
+      <div class="text" style="display: flex; justify-content: center">
+        <span>Your local time</span>
+        <br />
+      </div>
+      <br />
+      <div class="clock">
+        <br />
+      </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>

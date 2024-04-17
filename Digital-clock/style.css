@@ -1,37 +1,39 @@
-body {
-  background-color: white;
-  /* padding: 20px; */
-  /* border-radius: 5px; */
-}
-.text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.button {
-  margin: 10px;
-  height: 100px;
-  width: 100px;
-  /* background-color: black; */
-}
-
-#yellow {
+body,
+html {
+  height: 100%; /* Set the height of the body and html to full height */
+  margin: 0;
   background-color: yellow;
 }
 
-#blue {
-  background-color: blue;
+.center {
+  height: 100%;
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  flex-direction: column;
 }
 
-#grey {
-  background-color: grey;
+.text {
+  padding: 10px;
+  margin: 10px;
+  background-color: skyblue;
+  display: column;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  font-weight: bold;
 }
 
-#pink {
-  background-color: pink;
+.clock {
+  height: 100px;
+  width: 200px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  background-color: skyblue;
 }
