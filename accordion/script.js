@@ -26,6 +26,7 @@ const data = [
 ];
 
 const accordionWrapper = document.querySelector(".accordion");
+// const accordionWrapper = document.querySelector(".accordion");
 
 function createAccordionData() {
   accordionWrapper.innerHTML = data
